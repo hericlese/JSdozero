@@ -1,4 +1,150 @@
-h1{
-    Color:red;
-    
+* {                                                                         /*todos os itens*/
+    box-sizing:border-box;                                                  /* para elementos que a morta não seja o tamando total do elemento, evita pixeis bizarros. */
+    font-family: Helvetica, sans-serif                                      /*caso nao tenha use a segunda opção*/    
 }
+
+/*----------------------------------------------------------------------------Nav------------------------------------------------------------------------------------*/
+.navbar{
+    padding: 1rem;                                                          /*controle de fonte pra dispositiveis moveis*/
+    border-bottom: 1px solid #CCC;
+}
+.navbar .nav-item a {
+    color: #212529;
+}
+.nav-item {
+    margin:0 10px;                                                          /*espaçamento dos itens*/
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.navbar .nav-item .btn{
+    color: #FFF;                                                           /* designer e efeito do botão*/
+    background-color: #F03E3E;
+    border:1px solid transparent;
+    border-radius: 0;
+}
+.nav-link.btn.btn-primary:hover ,#search-form button:hover,  .list-group-item a:hover{ /*adicionamos o botão do banner e das vagas aqui para partilhar do msm designer do botao do navbar*/
+    background-color: #FFF;
+    color: #F03E3E;
+    border-color: #F03E3E;                                                  /* fim dos efeitos dos botoes*/
+}
+/*----------------------------------------------------------------------------Nav------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------banner----------------------------------------------------------------------------------*/
+
+#top-container{                                                                /*banner img e designer*/
+    padding: 110px;
+    background-color: #F7F9FC;
+    border-bottom: 4px solid #013068;
+    margin-bottom: 30px;
+    background-image: url("../img/banner2.jpg");
+    background-position: 0 100px;
+    background-size: cover;                                                   /*atuar em toda pagina sem vazar*/
+    color: #fff;
+}
+#main-title{                                                                                    
+  padding: 30px 0;                                                                         /*frases do banner*/
+  font-size: 3rem;
+}
+#main-subtitle{
+    font-size: 1rem;
+    padding-bottom: 80px;
+}
+
+ #search-form {                                                                                       /*formulario  */
+    padding: 30px 100px;
+
+ }
+ #search-form .col-md-10, #search-form .col-md2{
+     padding: 0;                                                                                   /* Botoes e barra do formulario*/
+
+ }
+#search-form input, #search-form button{
+    width: 100%;
+    border-radius: 0;                                                                                          /* Botoes e barra do formulario*/
+    height: 50px;
+    font-size: 18px;
+}
+
+ #search-form button{
+    color: #FFF;                                                           /* designer e efeito do botão*/
+    background-color: #F03E3E;
+    border:1px solid transparent;
+
+ }
+
+ /*----------------------------------------------------------------------------banner----------------------------------------------------------------------------------*/
+
+ /*----------------------------------------------------------------------------Lista de vagas----------------------------------------------------------------------------------*/
+
+ #jobs-container{
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+ 
+ 
+ #job-list .list-group-item{
+     margin-bottom: 8px;
+     border: 1px solid #ccc;                 /*Alinhamento da lista*/
+     padding: 15px 80px;
+     color: #212529;
+     height: 120px;
+
+
+ }
+
+ #job-list .list-group-item p{
+     font-size: 14px;
+     margin-bottom: 5px;                    /*textos dos itens da lista*/
+ }
+
+ #job-list .list-group-item.new-job{
+     border: none;
+     background-color: #fff7cc;             /*diferenciar new job*/
+
+ }
+
+ #job-list-title{
+     margin-bottom: 35px;
+ }
+
+ .list-group-item img{
+     width: 80px;
+     border: 1px solid #212529;                                         /*tratando a imagem da lista*/
+     border-radius: 50%;
+     background-color: #FFF;
+     position: absolute;
+     left: -40px;
+     top: calc(50% -40px);
+
+ }
+
+ .list-group-item a{
+     position: absolute;
+     right: 20px;
+     top: 35px;                                                                       /*posicionamento do botão das vagas*/
+     height: 50px;
+     line-height: 35px;
+     background-color: #f03e3e;
+     border: 1px solid transparent;
+     border-radius: 0;
+     color: #FFFF;
+ }
+
+ .new-job-label {
+    background-color: #ffd500;
+    color: #4d5154;
+    text-transform: uppercase;
+    font-weight: bold;                                                                  /*tag de nova vaga */
+    padding: 5px 10px;
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    display: none;
+ }
+
+ .new-job .new-job-label {
+     display: block;                                                                    /*aparecer new apenas na class de newjob*/
+ }

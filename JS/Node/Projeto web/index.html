@@ -30,13 +30,14 @@
     <div id="top-container" class="container-fluid">                                                                           <!--Começo do corpo do site, introdução barra de pesquisa e etc-->           
         <h1 id="main-title" class="text-center">Encontre seu emprego</h1>
         <p id="main-subtitle" class="text-center" > Somos o site com mais vagas de tecnologia do mercado, direcionadas a home office </p>
-        <form id ="seach-form" class="form-inline" action=""></form>
-            <div class="form=group col-md-10">
+        <form id ="search-form" class="form-inline" action="">
+            <div class="form-group col-md-10">
                 <input type="text" class="form-control" id="job" name="job" placeholder="Digite a vaga que esta buscando">     <!-- Barra de pesquisa-->
             </div>
             <div class="col-md2">
                 <button type="submit" class="btn btn-primary">Procurar</button>                                                <!--Botão de procurar-->
             </div>
+        </form>
     </div>
     <main>                                                                                                                     <!-- MAIN Area de conteudo principal do site-->
         <div id="jobs-container" class="container">
@@ -44,7 +45,7 @@
                 <div class="col-md-12">
                     <h2 id="job-list-title"> Veja as novas vagas em destaque</h2>
                     <ul id="job-list" class="list-goup">
-                        <li class="list-goup-item new-job">
+                        <li class="list-group-item new-job">
                             <img src="public/img/company.svg" alt="Company">
                             <p>Empresa</p>
                             <h2>Titulo da vaga</h2>
@@ -52,18 +53,19 @@
                             <span class="new-job-label">Nova</span>
                             <a class="btn btn-primary"> Ver vaga</a>
                         </li>
-                        <li class="list-goup-item new-job">
+                        <li class="list-group-item ">
                             <img src="public/img/company.svg" alt="Company">
                             <p>Empresa</p>
                             <h2>Titulo da vaga</h2>
                             <p>R$2000.00</p>
                             <a class="btn btn-primary"> Ver vaga</a>
                         </li>
-                        <li class="list-goup-item new-job">
+                        <li class="list-group-item new-job">
                             <img src="public/img/company.svg" alt="Company">
                             <p>Empresa</p>
                             <h2>Titulo da vaga</h2>
                             <p>R$2000.00</p>
+                            <span class="new-job-label">Nova</span>
                             <a class="btn btn-primary"> Ver vaga</a>
                         </li>
                     </ul>
