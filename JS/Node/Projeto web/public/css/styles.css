@@ -24,7 +24,7 @@
     border:1px solid transparent;
     border-radius: 0;
 }
-.nav-link.btn.btn-primary:hover ,#search-form button:hover,  .list-group-item a:hover{ /*adicionamos o botão do banner e das vagas aqui para partilhar do msm designer do botao do navbar*/
+.nav-link.btn.btn-primary:hover ,#search-form button:hover,  .list-group-item a:hover, #form-box button:hover { /*adicionamos o botão do banner e das vagas aqui para partilhar do msm designer do botao do navbar*/
     background-color: #FFF;
     color: #F03E3E;
     border-color: #F03E3E;                                                  /* fim dos efeitos dos botoes*/
@@ -34,18 +34,18 @@
 
 /*----------------------------------------------------------------------------banner----------------------------------------------------------------------------------*/
 
-#top-container{                                                                /*banner img e designer*/
+#top-container{                                                         /*banner img e designer*/
     padding: 110px;
     background-color: #F7F9FC;
     border-bottom: 4px solid #013068;
     margin-bottom: 30px;
     background-image: url("../img/banner2.jpg");
     background-position: 0 100px;
-    background-size: cover;                                                   /*atuar em toda pagina sem vazar*/
+    background-size: cover;                                             /*atuar em toda pagina sem vazar*/
     color: #fff;
 }
 #main-title{                                                                                    
-  padding: 30px 0;                                                                         /*frases do banner*/
+  padding: 30px 0;                                                        /*frases do banner*/
   font-size: 3rem;
 }
 #main-subtitle{
@@ -53,12 +53,12 @@
     padding-bottom: 80px;
 }
 
- #search-form {                                                                                       /*formulario  */
+ #search-form {                                                               /*formulario  */
     padding: 30px 100px;
 
  }
  #search-form .col-md-10, #search-form .col-md2{
-     padding: 0;                                                                                   /* Botoes e barra do formulario*/
+     padding: 0;                                                          /* Botoes e barra do formulario*/
 
  }
 #search-form input, #search-form button{
@@ -112,7 +112,7 @@
 
  .list-group-item img{
      width: 80px;
-     border: 1px solid #212529;                                         /*tratando a imagem da lista*/
+     border: 1px solid #212529;                              /*tratando a imagem da lista*/
      border-radius: 50%;
      background-color: #FFF;
      position: absolute;
@@ -124,12 +124,12 @@
  .list-group-item a{
      position: absolute;
      right: 20px;
-     top: 35px;                                                                       /*posicionamento do botão das vagas*/
+     top: 35px;                                                 /*posicionamento do botão das vagas*/
      height: 50px;
      line-height: 35px;
      background-color: #f03e3e;
      border: 1px solid transparent;
-     border-radius: 0;
+     border-radius: 0
      color: #FFFF;
  }
 
@@ -137,7 +137,7 @@
     background-color: #ffd500;
     color: #4d5154;
     text-transform: uppercase;
-    font-weight: bold;                                                                  /*tag de nova vaga */
+    font-weight: bold;                                          /*tag de nova vaga */
     padding: 5px 10px;
     position: absolute;
     right: 250px;
@@ -146,5 +146,55 @@
  }
 
  .new-job .new-job-label {
-     display: block;                                                                    /*aparecer new apenas na class de newjob*/
+     display: block;                                          /*aparecer new apenas na class de newjob*/
+ }
+
+  /*----------------------------------------------------------------------------Lista de vagas----------------------------------------------------------------------------------*/
+
+   /*----------------------------------------------------------------------------add page----------------------------------------------------------------------------------*/
+
+ #add-form-container{
+    margin-top: 100px;
+ }
+
+ /*alinhamento dos forms*/
+ #form-box {
+     padding: 50px;
+     box-shadow: 0 1px 5px rgba(0,0,0,.15); /*adicionando transparencia ao preto*/
+     border-radius: 4px;
+     background-color: #fff;
+     margin-bottom: 50px;
+ }
+
+ #add-form-container h2{
+    margin-bottom: 20px;
+ }
+
+ #add-form-container h2{
+    color: #f03e3e;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+
+ }
+
+ #add-form-container form label {
+    font-weight: bold;
+
+ }
+
+ #add-form-container form input, #add-form-container form textarea {
+    border: 2px solid #CCC;
+    background-color: #f8f9fa;
+
+ }
+
+ #form-box button{
+     height: 50px;
+     width: 200px;
+     background-color:  #f03e3e;
+     border: 1px solid transparent;
+     border-radius: 0;
+     margin-top: 20px;
+
  }
